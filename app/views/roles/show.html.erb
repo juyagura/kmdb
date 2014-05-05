@@ -1,1 +1,25 @@
-<pre><%= @role.to_yaml %></pre>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= @role.character_name %></h3>
+      </div>
+      <div class="panel-body">
+        <dl>
+          <dt>Movie</dt>
+          <dd><%= @list_of_movies.find(@role.movie_id).title %></dd>
+
+          <dt>Actor</dt>
+          <dd><%= @list_of_actors.find(@role.actor_id).name %></dd>
+
+          <dt>Actions</dt>
+          <dd>
+            <a href="/roles" class="btn btn-primary">Back to Roles List</a>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <pre><%= @role.to_yaml %></pre> -->

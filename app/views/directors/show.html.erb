@@ -1,1 +1,30 @@
-<pre><%= @director.to_yaml %></pre>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= @director.name %></h3>
+      </div>
+      <div class="panel-body">
+        <div class="col-sm-2">
+            <img src="<%= @director.image_url %>" class="img-responsive">
+        </div>
+        <div class="col-sm-10">
+          <dl>
+            <dt>Date of Birth</dt>
+            <dd><%= @director.dob %></dd>
+
+            <dt>Bio</dt>
+            <dd><%= @director.bio %></dd>
+
+            <dt>Actions</dt>
+            <dd>
+              <a href="/directors" class="btn btn-primary">Back to Directors List</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <pre><%= @director.to_yaml %></pre> -->

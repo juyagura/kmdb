@@ -12,10 +12,10 @@
         <div class="panel-body">
           <dl>
             <dt>Movie</dt>
-            <dd><%= role.movie_id %></dd>
+            <dd><%= @list_of_movies.find(role.movie_id).title %></dd>
 
             <dt>Actor</dt>
-            <dd><%= role.actor_id %></dd>
+            <dd><%= @list_of_actors.find(role.actor_id).name %></dd>
 
             <dt>Actions</dt>
             <dd>

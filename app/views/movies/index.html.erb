@@ -19,7 +19,7 @@
               <dd><%= movie.year %></dd>
 
               <dt>Director</dt>
-              <dd><%= movie.director_id %></dd>
+              <dd><%= @list_of_directors.find(movie.director_id).name %></dd>
 
               <dt>Description</dt>
               <dd><%= movie.description %></dd>
